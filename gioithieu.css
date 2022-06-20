@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+}
+
+
+/*================ ĐỊNH NGHĨA PHẦN BANNER==================*/
+
+.container {
+    margin: 0px auto;
+    max-width: 960px;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#main-menu {
+    display: flex;
+}
+
+ul#main-menu a {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #ffff;
+    display: block;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#banner {
+    width: 100%;
+    background-size: cover;
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+header.sticky {
+    background: #ffffff;
+    opacity: 0.9;
+    color: #000;
+    padding: 15px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky #main-menu a {
+    color: #000;
+}
+
+
+/*================HẾT HEADER==============*/
+
+#logo1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 10%;
+}
+
+.footer {
+    background-color: #d7e1ec;
+    display: flex;
+    width: 100%;
+}
+
+.menu-footer ul li a {
+    text-decoration: none;
+}
+
+.menu-footer {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.wrapper {
+    display: inline-flex;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.wrapper .icon {
+    margin: 0 15px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    display: flex;
+}
+
+.wrapper .icon span {
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .icon .tolltip {
+    top: 0px;
+    position: absolute;
+    background: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transform: all 0.4s cubic-bezier(0.68, -0.265, 1.5);
+}
+
+.wrapper .icon:hover .tolltip {
+    top: -20px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .icon .tolltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.wrapper .icon:hover .span,
+.wrapper .icon:hover .tolltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .icon:hover .span,
+.wrapper .facebook:hover .tolltip,
+.wrapper .facebook:hover .tolltip:before {
+    background: #3b5999;
+}
+
+.wrapper .icon:hover .span,
+.wrapper .Twitter:hover .tolltip,
+.wrapper .Twitter:hover .tolltip:before {
+    background: #46c1f6;
+}
+
+.wrapper .icon:hover .span,
+.wrapper .Instagram:hover .tolltip,
+.wrapper .Instagram:hover .tolltip:before {
+    background: #e1306c;
+}
+
+.wrapper .icon:hover .span,
+.wrapper .Youtube:hover .tolltip,
+.wrapper .Youtube:hover .tolltip:before {
+    background: #de463b;
+}
+
+
+/*================HẾT PHẦN FOOTER=======================*/
+
+.banner {
+    width: 100%;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contenner {
+    width: 70%;
+    margin: auto;
+    font-size: 25px;
+}
+
+.contenner1 .banner2 {
+    text-align: center;
+}
+
+.contenner1 span {
+    color: #247adc;
+}
+
+.dialy {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.map {
+    float: left;
+    display: block;
+    margin-left: 100px;
+    margin-top: 30px;
+}

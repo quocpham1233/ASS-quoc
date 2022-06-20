@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+}
+
+
+/*================ ĐỊNH NGHĨA PHẦN BANNER==================*/
+
+.container {
+    margin: 0px auto;
+    max-width: 960px;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul#main-menu {
+    display: flex;
+}
+
+ul#main-menu a {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #ffff;
+    display: block;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#banner {
+    width: 100%;
+    background-size: cover;
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0px;
+    transition: all 0.5s ease-in-out;
+}
+
+header.sticky {
+    background: #ffffff;
+    opacity: 0.9;
+    color: #000;
+    padding: 15px 0px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header.sticky #main-menu a {
+    color: #000;
+}
+
+
+/*=================== HẾT PHẦN BANNER===============*/
+
+
+/*=================Phần FOOTER================ */
+
+#logo1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 10%;
+}
+
+.footer {
+    background-color: #d7e1ec;
+    display: flex;
+    width: 100%;
+}
+
+.menu-footer ul li a {
+    text-decoration: none;
+}
+
+.menu-footer {
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.wrapper {
+    display: inline-flex;
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+.wrapper .icon {
+    margin: 0 15px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #000;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    display: flex;
+}
+
+.wrapper .icon span {
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper .icon span i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .icon .tolltip {
+    top: 0px;
+    position: absolute;
+    background: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transform: all 0.4s cubic-bezier(0.68, -0.265, 1.5);
+}
+
+.wrapper .icon:hover .tolltip {
+    top: -20px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .icon .tolltip:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.wrapper .icon:hover .span,
+.wrapper .icon:hover .tolltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .icon:hover .span,
+.wrapper .facebook:hover .tolltip,
+.wrapper .facebook:hover .tolltip:before {
+    background: #3b5999;
+}
+
+.wrapper .icon:hover .span,
+.wrapper .Twitter:hover .tolltip,
+.wrapper .Twitter:hover .tolltip:before {
+    background: #46c1f6;
+}
+
+.wrapper .icon:hover .span,
+.wrapper .Instagram:hover .tolltip,
+.wrapper .Instagram:hover .tolltip:before {
+    background: #e1306c;
+}
+
+.wrapper .icon:hover .span,
+.wrapper .Youtube:hover .tolltip,
+.wrapper .Youtube:hover .tolltip:before {
+    background: #de463b;
+}
+
+
+/*===============HẾT PHẦN FOOTER=================*/
+
+
+/*====================PHÀN NỘI DUNG================*/
+
+.noidung {
+    width: 100%;
+    display: block;
+    float: left;
+    margin: auto;
+    max-width: 100%;
+}
+
+h1 {
+    color: #46c1f6;
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noidung contenner h1 {
+    padding-top: 30px;
+}
+
+.contenner {
+    width: 20%;
+    display: block;
+    float: left;
+    background-size: cover;
+    text-align: center;
+    border-radius: 2px;
+    padding-top: 50px;
+}
+
+.contenner p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 2px;
+    text-align: center;
+}
+
+
+/*=============HẾT PHẦN NỘI DUNG1=================*/
+
+
+/*===============PHẦN NỘI DUNG2===================*/
+
+.noidung2 {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    float: left;
+}
+
+.nd1 {
+    width: 25%;
+    background-color: #86a3e1;
+    float: left;
+    height: 350px;
+    text-align: center;
+    border-radius: 45px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.nd2 {
+    background-color: #46c1f6;
+    width: 25%;
+    float: left;
+    height: 350px;
+    text-align: center;
+    border-radius: 45px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.nd3 {
+    background-color: #a3dbf7;
+    width: 25%;
+    float: left;
+    height: 350px;
+    text-align: center;
+    border-radius: 45px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.nd4 {
+    background-color: #82e2ee;
+    width: 25%;
+    float: left;
+    height: 350px;
+    text-align: center;
+    border-radius: 45px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+
+/*===========Hết phần nội dung 2==============*/
+
+
+/*=============Phần bảng================*/
+
+.bang {
+    width: 100%;
+}
+
+.bang1 {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+.bang h3 {
+    text-align: center;
+    font-size: 50px;
+    color: #46c1f6;
+}
+
+table,
+td,
+th {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    height: 40px;
+    text-align: center;
+}
+
+thead {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+td {
+    height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+tbody tr:hover {
+    background-color: #46c1f6;
+    color: #fff;
+}
+
+.bang2 {
+    width: 50%;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.bang2,
+td,
+th {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    height: 45px;
+    font-size: 20px;
+}
+
+thead {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
